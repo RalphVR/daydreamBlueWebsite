@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Sriracha&display=swap');
+
+body {
+  /*background-image: url("./images/Background_Pattern.jpg");*/
+  background-repeat: repeat;
+  background-color: #476266;
+  font-family: 'Raleway', sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+hr {
+  color: white;
+  background-color: white;
+  height: 2px;
+  width: 100%;
+}
+
+hr .thick{
+  color: white;
+  border-bottom: solid 2px white;
+  border-top: solid 2px white;
+  background-color: white;
+  height: 8px;
+  width: 100%;
+}
+
+iframe {
+    margin: 0 auto;
+    /*padding-top: 20px;
+    padding-bottom: 20px;*/
+    display: block;
+}
+
+h1 {
+  color: white;
+  /*font-size: 48px;*/
+  margin-bottom: 5px;
+}
+
+h3 {
+  color: white;
+}
+
+h4 {
+  color: white;
+}
+
+p {
+  color: white;
+  margin-bottom: 25px;
+}
+
+.greyBackground {
+  /*background-color: rgba(255,255,255,0.25) ;*/
+}
+
+/* Bootstrap CSS overrides */
+.container-fluid {
+  padding: 0px;
+}
+
+.banner-text {
+  padding: 10vh 0px 12vh 0px;
+}
+
+/* Container holding the image and the text */
+.image-container {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 5%;
+}
+
+.image-container h1 {
+  font-family: 'Sriracha', cursive;
+  font-size: 4vw;
+}
+
+.image-background {
+  background-color: white;
+  padding: 1.5rem 1.5rem 50px 1.5rem !important;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  transform: translate(2%, -100%);
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 5vw;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .banner-text {
+    padding: 10vw 0px 12vw 0px;
+  }
+
+  /* Container holding the image and the text */
+  .image-container {
+    padding: 1%;
+  }
+
+  .image-background {
+    padding: .25rem .25rem 15px .25rem !important;
+  }
+}
